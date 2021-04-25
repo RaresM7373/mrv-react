@@ -10,5 +10,5 @@ app.get('/api/customers', (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log('Server started');
+  console.log('Server started new client.');
 });
