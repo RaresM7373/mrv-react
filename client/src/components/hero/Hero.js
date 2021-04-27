@@ -12,7 +12,6 @@ const Hero = () => {
         
         <Container>
           <div className={classes.TitleContainer}>
-            {/* <h1 className={classes.Title}>Crafting <br/>Sfotware<span>.</span></h1> */}
             <GlitchText color1="pink" color2="blue" component='h1' disabled={false}>
               Crafting <br/> Software<span>.</span>
             </GlitchText>

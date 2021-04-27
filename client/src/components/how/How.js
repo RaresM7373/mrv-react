@@ -3,14 +3,18 @@ import classes from '../../assets/css/How.module.css';
 import Container from '../../components/ui-elements/Container';
 import ScrollAnimation from 'react-animate-on-scroll';
 import IconContainer from './HowIcon';
+import PrimaryButton from '../ui-elements/buttons/PrimaryButton';
 
 const How = () => {
   return (
     <Container>
       <div className={classes.HowContainer}>
           <div className={classes.LeftSide}>
-            <ScrollAnimation animateOnce animateIn="fadeIn">
+            <ScrollAnimation delay="250" animateOnce animateIn="fadeIn">
               <h1 className={classes.Title}>How we <br/> do things<span>.</span></h1>
+            </ScrollAnimation>
+            <ScrollAnimation animateOnce delay="1050" animateIn="fadeIn"> 
+              <PrimaryButton>GET IN TOUCH</PrimaryButton> 
             </ScrollAnimation>
           </div>
           <div className={classes.RightSide}>
@@ -36,11 +40,6 @@ const How = () => {
                 <IconContainer delay={750} text="DEVELOPMENT"/>
                 <IconContainer delay={850} text="DELIVERY"/>
               </div>
-
-              <div className={classes.OneItemRow, classes.ButtonRow}>
-                <button>Get in TOuch</button>
-              </div>
-
             </div>
           </div>
       </div>
