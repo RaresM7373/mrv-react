@@ -9,39 +9,37 @@ const How = () => {
   return (
     <Container>
       <div className={classes.HowContainer}>
-          <div className={classes.LeftSide}>
-            <ScrollAnimation delay="250" animateOnce animateIn="fadeIn">
-              <h1 className={classes.Title}>How we <br/> do things<span>.</span></h1>
-            </ScrollAnimation>
-            <ScrollAnimation animateOnce delay="1050" animateIn="fadeIn"> 
-              <PrimaryButton>GET IN TOUCH</PrimaryButton> 
-            </ScrollAnimation>
-          </div>
-          <div className={classes.RightSide}>
-            <div className={classes.ContentWrapper}>
+        <div className={classes.LeftSide}>
+          <ScrollAnimation delay={250} animateOnce animateIn="fadeIn">
+            <h1 className={classes.Title}>How we <br/> do things<span>.</span></h1>
+          </ScrollAnimation>
+          <ScrollAnimation animateOnce delay={1050} animateIn="fadeIn"> 
+            <PrimaryButton>GET IN TOUCH</PrimaryButton> 
+          </ScrollAnimation>
+        </div>
+        <div className={classes.RightSide}>
+          <div className={classes.ContentWrapper}>
+            <div className={classes.TwoItemsRow}>
+              <IconContainer delay={400} text="RESEARCH"/>
+              <IconContainer delay={550} text="COST EST."/>
+              <IconContainer delay={650} text="DESIGN"/>
+            </div>
 
-              {/* Only show this on mobile. */}
-              <div className={classes.TwoItemsRow}>
-                <IconContainer delay={400} text="RESEARCH"/>
-                <IconContainer delay={550} text="COST EST."/>
-                <IconContainer delay={650} text="DESIGN"/>
-              </div>
+            <div className={classes.TwoItemsRow}>
+              <IconContainer delay={400} text="RESEARCH"/>
+              <IconContainer delay={550} text="COST EST."/>
+            </div>
 
-              <div className={classes.TwoItemsRow}>
-                <IconContainer delay={400} text="RESEARCH"/>
-                <IconContainer delay={550} text="COST EST."/>
-              </div>
+            <div className={classes.OneItemRow}>
+              <IconContainer delay={650} text="DESIGN"/>
+            </div>
 
-              <div className={classes.OneItemRow}>
-                <IconContainer delay={650} text="DESIGN"/>
-              </div>
-
-              <div className={classes.TwoItemsRow}>
-                <IconContainer delay={750} text="DEVELOPMENT"/>
-                <IconContainer delay={850} text="DELIVERY"/>
-              </div>
+            <div className={classes.TwoItemsRow}>
+              <IconContainer delay={750} text="DEVELOPMENT"/>
+              <IconContainer delay={850} text="DELIVERY"/>
             </div>
           </div>
+        </div>
       </div>
     </Container>
   );

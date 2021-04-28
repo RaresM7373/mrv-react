@@ -1,7 +1,6 @@
 .HowContainer {
   width: 100%;
   height: 100vh;
-  margin-bottom: 1000px;
   display: flex;
 }
 
@@ -13,6 +12,13 @@
   justify-content: center;
 }
 
+.LeftSide {
+  flex-flow: column;
+  align-items: flex-start;
+  padding-left: 150px;
+}
+
+
 .LeftSide .Title {
   color: black;
   font-family: 'Roboto', sans-serif;
@@ -21,11 +27,6 @@
   padding: 0;
 }
 
-.LeftSide {
-  flex-flow: column;
-  align-items: flex-start;
-  padding-left: 150px;
-}
 
 .LeftSide .Title span {
   color: var(--primary);

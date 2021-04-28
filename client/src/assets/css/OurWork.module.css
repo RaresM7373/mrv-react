@@ -1,0 +1,63 @@
+.OurWork {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  background-color: var(--dark-primary);
+  margin-bottom: 500px;
+}
+
+.LeftSide, .RightSide {
+  height: 100%;
+  display: flex;
+}
+
+.RightSide {
+  width: 45%;
+  justify-content: center;
+  align-items: center;
+}
+
+.RightSide .Title {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 5em;
+  margin: 40px 0;
+  padding: 0;
+}
+
+.RightSide .Title span {
+  color: var(--primary);
+}
+
+.LeftSide {
+  width: 55%;
+  justify-content: flex-end;
+  align-items: center;
+  /* background-color: red; */
+}
+
+.SlideShowContainer {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+
+.SlideShowContainer .ImageWrapper {
+  border-radius: 20px;
+  background-color: red;
+  overflow: hidden;
+}
+
+.SlideShowContainer .ImageWrapper img {
+  width: 100%;
+  height: 100%;
+}
+
+.SlideShowContainer p {
+  color: white;
+  font-style: italic;
+  text-align: center;
+}

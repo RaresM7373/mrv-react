@@ -24,7 +24,7 @@ const HowIcon = (props) => {
       case 'development':
         icon = <AiOutlineCode/>
         break;
-      case 'delivery':
+      default:
         icon = <FaRegLightbulb/>
         break;
     }

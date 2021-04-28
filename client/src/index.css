@@ -9,6 +9,7 @@ body {
 }
 
 :root {
-  --primary: #045DE9;
-  --btn: #101029;
+  --primary: #4486ef;
+  --dark-primary: #101029;
+  --btn: #1d1c54;
 }
