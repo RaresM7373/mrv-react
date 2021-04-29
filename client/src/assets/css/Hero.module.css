@@ -86,3 +86,34 @@
     width: 85%;
   }
 }
+
+@media (max-width: 550px) {
+  .TitleContainer .Title, .TitleContainer h1 {
+    font-size: 3.5em;
+    margin-bottom: 30px;
+  }
+
+  .Group {
+    width: 100%;
+    flex-flow: column;
+    align-items: center;
+  }
+
+  .Group input {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+
+  .Group button {
+    width: 50%;
+    height: 50px;
+    border-radius: 5px;
+  }
+
+  .HeroLanding {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

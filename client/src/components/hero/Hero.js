@@ -8,8 +8,7 @@ const Hero = () => {
   return (
    <div>
       <div className={classes.HeroLanding}>
-        <Overlay></Overlay>
-        
+        <Overlay/>
         <Container>
           <div className={classes.TitleContainer}>
             <GlitchText color1="pink" color2="blue" component='h1' disabled={false}>

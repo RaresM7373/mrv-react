@@ -42,7 +42,7 @@ const StyledList = styled.ul`
   height: 100%;
   list-style: none;
   padding: 0;
-  margin: 0 27% 0 0;
+  margin: 0 7.5% 0 0;
   display: flex;
   justify-content: flex-end;
   color: pink;

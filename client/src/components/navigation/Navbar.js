@@ -29,7 +29,7 @@ const StyledNavbar = styled.div`
   }
 
   @media (max-width: 800px) {
-    padding-right: 80px;
+    padding-right: 20px;
 
     span {
       display: inline;
@@ -43,7 +43,7 @@ const NavigationDrawer = styled.div`
   position: fixed;
   z-index: 3;
   bottom: -80px;
-  left: ${props => props.opened ? '0' : ' -100vw'};
+  left: ${props => props.opened ? '0' : ' -120vw'};
   background-color: white;
   display: flex;
   align-items: center;
