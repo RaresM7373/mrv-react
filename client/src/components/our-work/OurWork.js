@@ -16,7 +16,7 @@ const OurWork = () => {
             <ScrollAnimation animateOnce animateIn="fadeInLeft">
               Some of
             </ScrollAnimation> 
-            <ScrollAnimation animateOnce animateIn="fadeInRight" delay={200}>
+            <ScrollAnimation animateOnce animateIn="fadeInRight" delay={100}>
               our work<span>.</span>
             </ScrollAnimation>
           </h1>

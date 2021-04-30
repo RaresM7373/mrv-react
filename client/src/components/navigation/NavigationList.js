@@ -5,7 +5,7 @@ const StyledAnchor = styled.a`
   text-decoration: none;
   font-family: 'Roboto', sans-serif;
   font-size: 1.2em;
-  color: ${props => props.scrolled ? 'black' : 'white'};
+  color: ${props => props.scrolled ? 'var(--black)' : 'white'};
   transition: all .4s;
   position: relative;
   padding-bottom: 5px;
@@ -42,7 +42,7 @@ const StyledList = styled.ul`
   height: 100%;
   list-style: none;
   padding: 0;
-  margin: 0 27% 0 0;
+  margin: 0 7.5% 0 0;
   display: flex;
   justify-content: flex-end;
   color: pink;

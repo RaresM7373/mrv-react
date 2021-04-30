@@ -1,9 +1,11 @@
 .OurWork {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   background-color: var(--dark-primary);
-  margin-bottom: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .LeftSide, .RightSide {
@@ -47,17 +49,42 @@
 
 .SlideShowContainer .ImageWrapper {
   border-radius: 20px;
-  background-color: red;
   overflow: hidden;
 }
 
 .SlideShowContainer .ImageWrapper img {
   width: 100%;
-  height: 100%;
+  min-height: 100%;
 }
 
 .SlideShowContainer p {
   color: white;
   font-style: italic;
   text-align: center;
+}
+
+@media (max-width: 1400px) {
+  .LeftSide, .RightSide {
+    width: 100%;
+  }
+
+  .LeftSide {
+    order: 2;
+    justify-content: center;
+    padding-bottom: 50px;
+  }
+
+  .OurWork {
+    flex-flow: column;
+  }
+}
+
+@media (max-width: 550px) {
+  .RightSide .Title {
+    font-size: 3.5em;
+  }
+
+  .OurWork {
+    min-height: auto;
+  }
 }
