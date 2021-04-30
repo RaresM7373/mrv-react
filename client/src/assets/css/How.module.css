@@ -22,7 +22,7 @@
 
 
 .LeftSide .Title {
-  color: black;
+  color: var(--black);
   font-family: 'Roboto', sans-serif;
   font-size: 5em;
   margin: 40px 0;

@@ -5,7 +5,7 @@ const StyledAnchor = styled.a`
   text-decoration: none;
   font-family: 'Roboto', sans-serif;
   font-size: 1.2em;
-  color: ${props => props.scrolled ? 'black' : 'white'};
+  color: ${props => props.scrolled ? 'var(--black)' : 'white'};
   transition: all .4s;
   position: relative;
   padding-bottom: 5px;
