@@ -57,6 +57,7 @@ const NavigationDrawer = styled.div`
     justify-content: space-around;
     flex-flow: column;
     align-items: center;
+    padding: 0;
   }
 
   ul li a {
@@ -64,7 +65,7 @@ const NavigationDrawer = styled.div`
     color: black;
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
-    font-size: 4em;
+    font-size: 3em;
     transition: all .4s;
   }
 

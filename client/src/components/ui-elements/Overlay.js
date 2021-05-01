@@ -1,4 +1,3 @@
-import React from 'react';
 import styled from 'styled-components';
 
 const OverlayDiv = styled.div`
@@ -11,8 +10,4 @@ const OverlayDiv = styled.div`
   z-index: 2;
 `;
 
-const Overlay = () => {
-  return <OverlayDiv/>;
-}
-
-export default Overlay;
+export default OverlayDiv;

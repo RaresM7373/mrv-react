@@ -1,4 +1,3 @@
-import React from 'react';
 import styled from 'styled-components';
 
 const ContainerDiv = styled.div`
@@ -13,6 +12,4 @@ const ContainerDiv = styled.div`
   }
 `;
 
-const Container = (props) => <ContainerDiv>{props.children}</ContainerDiv>
-
-export default Container;
+export default ContainerDiv;
