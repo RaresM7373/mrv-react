@@ -28,6 +28,9 @@ const Footer = () => {
             <h1><FaLinkedin /></h1>
             <h1><FaTwitter /></h1>
           </div>
+          <div className={classes.IconsContainer}>
+            <p className={classes.Copyright}>&copy; 2021 All rights reserved.</p>
+          </div>
         </div>
       </div>
     </footer>
