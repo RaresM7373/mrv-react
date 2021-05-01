@@ -18,33 +18,20 @@ const PrimaryStyledButton = styled.button`
   box-shadow: 0 5px 15px rgba(0,0,0,0.20);
   height: 60px;
   border-radius: 5px;
+  z-index: 2;
+  transition: all .4s;
 
   span {
     position: relative; 
     z-index: 4;
   }
 
-  &:after {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 490%;
-    width: 140%;
-    background: var(--primary);
-    -webkit-transition: all .5s ease-in-out;
-    transition: all .5s ease-in-out;
-    -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
-    transform: translateX(-98%) translateY(-25%) rotate(45deg);
-  }
-
-  &:hover:after {
-    -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
-    transform: translateX(-9%) translateY(-25%) rotate(45deg);
+  &:hover {
+    background-color: var(--btn-dark);
   }
 `;
 
 const PrimaryButton = (props) => <PrimaryStyledButton><span>{props.children}</span></PrimaryStyledButton>;
 
 
-export default PrimaryButton;
+export default PrimaryStyledButton;

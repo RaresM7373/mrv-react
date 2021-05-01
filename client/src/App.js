@@ -3,6 +3,7 @@ import Navbar from './components/navigation/Navbar';
 import How from './components/how/How';
 import OurWork from './components/our-work/OurWork';
 import Contact from './components/contact/Contact';
+import Footer from './components/footer/Footer';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <How></How>
       <OurWork></OurWork>
       <Contact></Contact>
+      <Footer></Footer>
     </div>
   );
 }
