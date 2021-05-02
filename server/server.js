@@ -2,7 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const PORT = process.env.PORT || 8081;
 const cors = require('cors');
-const path = require('path');
+const serveStatic = require('serve-static');
 require('dotenv').config();
 
 const mailgunApiKey = process.env.MAILGUN_KEY;
@@ -14,7 +14,8 @@ var mailgun = require('mailgun-js')({
 });
 
 var app = express();
-app.use(express.static(path.join(__dirname, 'client/build')));
+// app.use(express.static(path.join(__dirname, './client/build')));
+app.use(serveStatic(__dirname + '/client/build'));
 app.use(cors());
 app.use(bodyParser.json());
 
