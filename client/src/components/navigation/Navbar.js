@@ -101,7 +101,8 @@ const Navbar = () => {
     toggleDrawer(!drawerOpened);
     if(window.scrollY <= 100) {
       toggleIsScrolled(!isScrolled);
-      switchColor('black');
+      if(hamburgerColor === 'white') switchColor('black');
+      else switchColor('white');
     }
   }
 
@@ -112,9 +113,9 @@ const Navbar = () => {
         <NavigationList scrolled={isScrolled} />
         <NavigationDrawer opened={drawerOpened}>
           <ul>
-            <li><a href="/">HOME</a></li>
-            <li><a href="/">OUR WORK</a></li>
-            <li><a href="/">CONTACT</a></li>
+            <li><a onClick={() => {toggleDrawer(!drawerOpened)}} href="/">HOME</a></li>
+            <li><a onClick={() => {toggleDrawer(!drawerOpened)}} href="#our-work">OUR WORK</a></li>
+            <li><a onClick={() => {toggleDrawer(!drawerOpened)}} href="#contact">CONTACT</a></li>
           </ul>
         </NavigationDrawer>
         <span>
