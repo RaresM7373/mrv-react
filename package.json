@@ -4,7 +4,6 @@
   "description": "A React.js revamp of our company's website.",
   "main": "index.js",
   "scripts": {
-    "heroku-postbuild": "cd client && npm install && npm insatll --only=dev --no-shrinkwrap && npm run-script build",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
     "server": "nodemon server.js",
