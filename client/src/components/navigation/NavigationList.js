@@ -27,8 +27,8 @@ const NavigationList = (props) => {
    <div>
       <StyledList>
         <li><StyledAnchor scrolled={props.scrolled} href="/">Home</StyledAnchor></li>
-        <li><StyledAnchor scrolled={props.scrolled} href="/">Our Work</StyledAnchor></li>
-        <li><StyledAnchor scrolled={props.scrolled} href="/">Contact</StyledAnchor></li>
+        <li><StyledAnchor scrolled={props.scrolled} href="#our-work">Our Work</StyledAnchor></li>
+        <li><StyledAnchor scrolled={props.scrolled} href="#contact">Contact</StyledAnchor></li>
       </StyledList>
    </div>
   );
