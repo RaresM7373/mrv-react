@@ -35,8 +35,6 @@ app.post('/api/send_message', (request, response) => {
       response.status(200).send({success: true})
     }
   });
-
-  
 });
 
 app.listen(PORT, () => {
