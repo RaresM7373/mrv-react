@@ -32,7 +32,7 @@ const SlideShow = (props) => {
   }, []);
 
   useEffect(() => {
-    if(index == 3) setIndex(0);
+    if(index === 3) setIndex(0);
   }, [index])
 
   return(

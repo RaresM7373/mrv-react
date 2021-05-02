@@ -148,4 +148,12 @@
   .TwoItemsRow {
     margin-top: 0;
   }
+
+  .HowContainer {
+    padding-bottom: 50px;
+  }
+
+  .HowContainer button {
+    margin-bottom: 30px;
+  }
 }
