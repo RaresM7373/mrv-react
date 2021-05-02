@@ -1,4 +1,3 @@
-import React from 'react';
 import styled from 'styled-components';
 
 const PrimaryStyledButton = styled.button`
@@ -30,8 +29,5 @@ const PrimaryStyledButton = styled.button`
     background-color: var(--btn-dark);
   }
 `;
-
-const PrimaryButton = (props) => <PrimaryStyledButton><span>{props.children}</span></PrimaryStyledButton>;
-
 
 export default PrimaryStyledButton;

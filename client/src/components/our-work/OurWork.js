@@ -7,7 +7,7 @@ import SlideShow from './SlideShow';
 const OurWork = () => {
   return (
     <Container>
-      <div className={classes.OurWork}>
+      <div id="our-work" className={classes.OurWork}>
         <div className={classes.LeftSide}>
           <SlideShow />
         </div>
