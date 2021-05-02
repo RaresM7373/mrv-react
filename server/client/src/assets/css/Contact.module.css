@@ -1,0 +1,64 @@
+.Contact {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  align-items: center;
+}
+
+.Contact h1 {
+  text-align: center;
+}
+
+.Contact .SubtitleContainer {
+  width: 550px;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.Contact .Subtitle {
+  color: grey;
+  font-size: 1.3em;
+  margin-top: 0;
+}
+
+.Form {
+  width: 700px;
+  padding-top: 30px;
+  margin-bottom: 30px
+}
+
+.Form input,
+.Form textarea {
+  border: none;
+  width: 100%;
+  max-width: 100%;
+  outline: none;
+  height: 50px;
+  border-radius: 5px;
+  background: #f0f4ff;
+  font-size: 1em;
+  padding-left: 30px; 
+}
+
+.Form textarea  {
+  margin-top: 30px;
+  padding-top: 15px;
+  height: 100px;
+}
+
+@media (max-width: 800px) {
+  .Form {
+    width: 100%;
+  }
+
+  .Contact .SubtitleContainer {
+    width: 100%;
+  }
+}
+
+@media (max-width: 550px) {
+  .SubtitleContainer .Subtitle {
+   font-size: 1em;
+  }
+}
